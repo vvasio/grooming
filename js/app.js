@@ -58,12 +58,12 @@ document.addEventListener("DOMContentLoaded", function(){
         });
 
         jQuery('#services').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated fadeInUp',
+            classToAdd: 'visible animated fadeInDown',
             offset: 100
         });
 
         jQuery('img').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated jackInTheBox',
+            classToAdd: 'visible animated zoomIn',
             offset: 100
         });
 

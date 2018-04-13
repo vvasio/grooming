@@ -90,28 +90,35 @@ nav ul li:hover {
 }
 
 /*LOGO*/
-.extra-padding {
+.first-logo-padding {
     padding-top: 72px;
 }
 
-.logo {
-    min-height: 400px;
-    background: url("../img/dog_logo.jpeg") no-repeat 0 -461px;
+.logo-row {
     text-align: center;
+    height: 100%;
+
+}
+
+.logo {
+    display: inline-block;
+    background: url("../img/dog_logo.jpeg") no-repeat 0 -461px;
     color: white;
     border: 3px solid #FFB900;
     border-radius: 30px;
+    width: 100%;
+    background-size: cover;
 }
 
 
 .logo h1 {
-    margin-top: 100px;
+    margin-top: 60px;
     font-size: 55px;
-    margin-bottom: 10px;
 }
 
 .logo p {
     font-size: 20px;
+    margin-bottom: 60px;
 }
 
 /*SLIDESHOWS*/
@@ -129,12 +136,12 @@ nav ul li:hover {
 #facts {
     float: right;
     width: 47.5%;
-
 }
 #facts .fact {
     border: 3px solid #FFB900;
     border-radius: 20px;
     padding: 20px 10px;
+    width: 95%;
 }
 
 #facts p {
@@ -145,6 +152,7 @@ nav ul li:hover {
 #images .slider {
     border: 3px solid #FFB900;
     border-radius: 20px;
+    width: 100%;
 }
 
 /*BOXES*/
@@ -156,7 +164,7 @@ nav ul li:hover {
 }
 
 #boxes .box {
-    float: left;
+    display: inline-block;
     width: 30%;
     color: #35424a;
     margin: auto;
@@ -253,18 +261,20 @@ th, td {
 .gallery {
     padding: 10px 0;
     background-color: #35424a;
+    text-align: center;
 }
 
 .gallery img {
-    width: 200px;
+    width: 18%;
     padding: 5px;
     filter: grayscale(100%);
     transition: 1.5s;
+    display: inline-block;
 }
 
 .gallery img:hover {
     filter: grayscale(0);
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 /*ABOUT*/
@@ -293,13 +303,13 @@ th, td {
 .contact-img img {
     border: 3px solid #FFB900;
     border-radius: 20px;
-    width: 490px;
+    width: 80%;
     transition: 1.5s;
     filter: grayscale(0);
 }
 
 .contact-img img:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .bold {
@@ -391,6 +401,7 @@ th, td {
     /*BOXES*/
     #boxes {
         margin-top: 10px;
+
     }
 
     #boxes .box {

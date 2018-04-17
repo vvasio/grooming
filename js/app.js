@@ -48,12 +48,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
     jQuery(document).ready(function() {
         jQuery('.slider').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated fadeInUp',
+            classToAdd: 'visible animated fadeInLeft',
             offset: 100
         });
 
         jQuery('.fact').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated fadeInDown',
+            classToAdd: 'visible animated fadeInRight',
             offset: 100
         });
 

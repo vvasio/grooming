@@ -47,25 +47,25 @@ document.addEventListener("DOMContentLoaded", function(){
     /*animate.css*/
 
     jQuery(document).ready(function() {
-        jQuery('.slider').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated fadeInLeft',
-            offset: 100
-        });
-
-        jQuery('.fact').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated fadeInRight',
-            offset: 100
-        });
+        // jQuery('.slider').addClass("hidden").viewportChecker({
+        //     classToAdd: 'visible animated fadeInLeft',
+        //     offset: 100
+        // });
+        //
+        // jQuery('.fact').addClass("hidden").viewportChecker({
+        //     classToAdd: 'visible animated fadeInRight',
+        //     offset: 100
+        // });
 
         jQuery('#services').addClass("hidden").viewportChecker({
             classToAdd: 'visible animated fadeInDown',
             offset: 100
         });
 
-        jQuery('img').addClass("hidden").viewportChecker({
-            classToAdd: 'visible animated zoomIn',
-            offset: 100
-        });
+        // jQuery('img').addClass("hidden").viewportChecker({
+        //     classToAdd: 'visible animated zoomIn',
+        //     offset: 100
+        // });
 
         jQuery('.wobble').addClass("hidden").viewportChecker({
             classToAdd: 'visible animated fadeInUp',
@@ -76,88 +76,72 @@ document.addEventListener("DOMContentLoaded", function(){
 
     /*jquery scroll navbar*/
     $(document).ready(function (){
-        $(".mainNav").click(function (){
-            $('html, body').animate({
-                scrollTop: '0'
-            }, 1000);
-        });
+         $(".mainNav").click(function (){
+             $('html, body').animate({
+                 scrollTop: '0'
+             }, 1000);
+         });
 
-        $(".pricingNav").click(function (){
-            $('html, body').animate({
-                scrollTop: '800px'
-            }, 1000);
-        });
 
-        $(".galleryNav").click(function (){
-            $('html, body').animate({
-                scrollTop: '2100px'
-            }, 1000);
-        });
+           $(".aboutNav").click(function (){
+               $('html, body').animate({
+                   scrollTop: $("#about").offset().top-330
+               }, 1000);
+           });
 
-        $(".aboutNav").click(function (){
-            $('html, body').animate({
-                scrollTop: '2850px'
-            }, 1000);
-        });
+           $(".galleryNav").click(function (){
+               $('html, body').animate({
+                   scrollTop: $(".galleryScroll").offset().top-70
+               }, 1000);
+           });
 
-        $(".contactNav").click(function (){
-            $('html, body').animate({
-                scrollTop: '3300px'
-            }, 1000);
-        });
-
+           $(".contactNav").click(function (){
+               $('html, body').animate({
+                   scrollTop: $("#contact").offset().top-330
+               }, 1000);
+           });
 
     });
     /*changing li style while scrolling (not by clicking buttons)*/
-    $(window).scroll(function() {
-        const scroll = $(window).scrollTop();
-
-        if (scroll < 800) {
-            $(".mainNav").addClass("current");
-        } else {
-            $(".mainNav").removeClass("current");
-        }
-    });
-
-    $(window).scroll(function() {
-        const scroll = $(window).scrollTop();
-
-        if (scroll >= 800 && scroll < 2100) {
-            $(".pricingNav").addClass("current");
-        } else {
-            $(".pricingNav").removeClass("current");
-        }
-    });
-
-    $(window).scroll(function() {
-        const scroll = $(window).scrollTop();
-
-        if (scroll >= 2100 && scroll < 2850) {
-            $(".galleryNav").addClass("current");
-        } else {
-            $(".galleryNav").removeClass("current");
-        }
-    });
-
-    $(window).scroll(function() {
-        const scroll = $(window).scrollTop();
-
-        if (scroll >= 2850 && scroll < 3300) {
-            $(".aboutNav").addClass("current");
-        } else {
-            $(".aboutNav").removeClass("current");
-        }
-    });
-
-    $(window).scroll(function() {
-        const scroll = $(window).scrollTop();
-
-        if (scroll >= 3300) {
-            $(".contactNav").addClass("current");
-        } else {
-            $(".contactNav").removeClass("current");
-        }
-    });
+    // $(window).scroll(function() {
+    //     const scroll = $(window).scrollTop();
+    //
+    //     if (scroll < 860) {
+    //         $(".mainNav").addClass("current");
+    //     } else {
+    //         $(".mainNav").removeClass("current");
+    //     }
+    // });
+    //
+    // $(window).scroll(function() {
+    //     const scroll = $(window).scrollTop();
+    //
+    //     if (scroll >= 860 && scroll < 1830) {
+    //         $(".aboutNav").addClass("current");
+    //     } else {
+    //         $(".aboutNav").removeClass("current");
+    //     }
+    // });
+    //
+    // $(window).scroll(function() {
+    //     const scroll = $(window).scrollTop();
+    //
+    //     if (scroll >= 1830 && scroll < 2550) {
+    //         $(".galleryNav").addClass("current");
+    //     } else {
+    //         $(".galleryNav").removeClass("current");
+    //     }
+    // });
+    //
+    //
+    // $(window).scroll(function() {
+    //     const scroll = $(window).scrollTop();
+    //
+    //     if (scroll >= 2550) {
+    //         $(".contactNav").addClass("current");
+    //     } else {
+    //         $(".contactNav").removeClass("current");
+    //     }
+    // });
 
 });
-
